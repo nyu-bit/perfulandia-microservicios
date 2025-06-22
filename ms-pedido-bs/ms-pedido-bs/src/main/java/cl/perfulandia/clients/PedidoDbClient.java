@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(name = "ms-pedido-db", url = "http://localhost:8087")
+@FeignClient(name = "ms-pedido-db", url = "http://localhost:8086")
 public interface PedidoDbClient {
     @GetMapping("/pedidos")
     List<PedidoDTO> findAll();
