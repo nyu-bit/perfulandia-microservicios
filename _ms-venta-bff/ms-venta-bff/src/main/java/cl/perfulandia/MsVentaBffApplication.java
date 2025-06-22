@@ -6,8 +6,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableFeignClients(basePackages = "cl.perfulandia.clients")
-public class MsPedidoBffApplication {
+public class MsVentaBffApplication {
     public static void main(String[] args) {
-        SpringApplication.run(MsPedidoBffApplication.class, args);
+        SpringApplication.run(MsVentaBffApplication.class, args);
     }
 }
