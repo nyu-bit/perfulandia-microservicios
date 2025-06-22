@@ -1,0 +1,37 @@
+package cl.perfulandia.controller;
+
+import cl.perfulandia.model.entities.Envio;
+import cl.perfulandia.service.EnvioService;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/envios")
+public class EnvioController {
+    private final EnvioService envioService;
+
+    public EnvioController(EnvioService envioService) {
+        this.envioService = envioService;
+    }
+
+    @GetMapping
+    public List<Envio> findAll() {
+        return envioService.findAll();
+    }
+
+    @GetMapping("/{id}")
+    public Envio findById(@PathVariable Long id) {
+        return envioService.findById(id);
+    }
+
+    @PostMapping
+    public Envio save(@RequestBody Envio envio) {
+        return envioService.save(envio);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteById(@PathVariable Long id) {
+        envioService.deleteById(id);
+    }
+}
