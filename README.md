@@ -185,8 +185,7 @@ spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
 
 - [ ] Implementar manejo de excepciones global
 - [ ] Agregar validaciones de entrada
-- [ ] Implementar logging estructurado
+- [ ] Integracíón otras APIs faltantes y frontend
 - [ ] Agregar documentación Swagger/OpenAPI
-- [ ] Implementar circuit breakers
 - [ ] Agregar tests unitarios e integración
 
