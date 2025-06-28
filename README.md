@@ -115,7 +115,7 @@ Cada microservicio DB utiliza una base de datos MySQL diferente:
 # Configuración común
 spring.datasource.url=jdbc:mysql://localhost:3306/{nombre_db}?useSSL=false&serverTimezone=UTC
 spring.datasource.username=root
-spring.datasource.password=lucas
+spring.datasource.password=root
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
