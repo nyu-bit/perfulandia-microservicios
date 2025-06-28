@@ -1,10 +1,15 @@
 package cl.perfulandia.model.entities;
 
 import jakarta.persistence.*;
+import lombok.*;
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "envio")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Envio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

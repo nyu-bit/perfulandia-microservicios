@@ -1,6 +1,6 @@
 package cl.perfulandia.controller;
 
-import cl.perfulandia.model.entities.Pedido;
+import cl.perfulandia.model.dto.PedidoDTO;
 import cl.perfulandia.service.PedidoService;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,17 +16,17 @@ public class PedidoController {
     }
 
     @GetMapping
-    public List<Pedido> findAll() {
+    public List<PedidoDTO> findAll() {
         return pedidoService.findAll();
     }
 
     @GetMapping("/{id}")
-    public Pedido findById(@PathVariable Long id) {
+    public PedidoDTO findById(@PathVariable Long id) {
         return pedidoService.findById(id);
     }
 
     @PostMapping
-    public Pedido save(@RequestBody Pedido pedido) {
+    public PedidoDTO save(@RequestBody PedidoDTO pedido) {
         return pedidoService.save(pedido);
     }
 

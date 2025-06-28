@@ -1,6 +1,6 @@
 package cl.perfulandia.controller;
 
-import cl.perfulandia.model.entities.Envio;
+import cl.perfulandia.model.dto.EnvioDTO;
 import cl.perfulandia.service.EnvioService;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,17 +16,17 @@ public class EnvioController {
     }
 
     @GetMapping
-    public List<Envio> findAll() {
+    public List<EnvioDTO> findAll() {
         return envioService.findAll();
     }
 
     @GetMapping("/{id}")
-    public Envio findById(@PathVariable Long id) {
+    public EnvioDTO findById(@PathVariable Long id) {
         return envioService.findById(id);
     }
 
     @PostMapping
-    public Envio save(@RequestBody Envio envio) {
+    public EnvioDTO save(@RequestBody EnvioDTO envio) {
         return envioService.save(envio);
     }
 

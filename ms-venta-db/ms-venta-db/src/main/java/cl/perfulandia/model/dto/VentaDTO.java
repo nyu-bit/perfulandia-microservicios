@@ -2,8 +2,7 @@ package cl.perfulandia.model.dto;
 
 import lombok.*;
 
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class VentaDTO {
